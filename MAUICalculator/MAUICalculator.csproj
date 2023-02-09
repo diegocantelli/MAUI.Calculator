@@ -59,14 +59,11 @@
 	  <Folder Include="MVVM\" />
 	</ItemGroup>
 	<ItemGroup>
-	  <MauiXaml Remove="Resources\Styles\CalcDictionary.xaml" />
-	</ItemGroup>
-	<ItemGroup>
 	  <MauiXaml Update="MVVM\CalcView.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
-	</ItemGroup>
-	<ItemGroup>
-	  <BundleResource Include="Resources\Styles\CalcDictionary.xaml" />
+	  <MauiXaml Update="Resources\Styles\CalcDictionary.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
 	</ItemGroup>
 </Project>
