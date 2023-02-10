@@ -38,4 +38,32 @@
                     Value="30, 30, 0, 0"/>
     </Style>
     <!--#endregion-->
+
+    <!--#region Button-->
+        <Style x:Key="BaseButton" TargetType="Button">
+            <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Dark={StaticResource DarkSecondary},
+                    Light={StaticResource LightSecondary}}"/>
+            <Setter Property="FontSize"
+                    Value="25"/>
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Dark={StaticResource DarkText},
+                    Light={StaticResource LightText}}"/>
+         </Style>
+
+    <Style BasedOn="{StaticResource BaseButton}" TargetType="Button" />
+    <Style x:Key="YellowButton"
+           BasedOn="{StaticResource BaseButton}"
+           TargetType="Button">
+           <Setter Property="TextColor"
+                   Value="{StaticResource YellowColor}"/>
+    </Style>
+
+    <Style x:Key="RedButton"
+           BasedOn="{StaticResource BaseButton}"
+           TargetType="Button">
+           <Setter Property="TextColor"
+                   Value="{StaticResource RedColor}"/>
+    </Style>
+    <!--#endregion-->
 </ResourceDictionary>

@@ -18,13 +18,17 @@
                   RowSpacing="15"
                   Padding="15">
                 <!--#region linha1-->
-                <Button Text="AC"/>
+                <Button Text="AC"
+                        Style="{StaticResource YellowButton}"/>
                 <Button Text="⌫"
-                        Grid.Column="1"/>
+                        Grid.Column="1"
+                        Style="{StaticResource YellowButton}"/>
                 <Button Text="%"
-                        Grid.Column="2"/>
+                        Grid.Column="2"
+                        Style="{StaticResource YellowButton}"/>
                 <Button Text="/"
-                        Grid.Column="3"/>
+                        Grid.Column="3"
+                        Style="{StaticResource RedButton}"/>
                 <!--#region-->
 
                 <!--#region linha 2-->
@@ -38,7 +42,8 @@
                         Grid.Row="1"/>
                 <Button Text="*"
                         Grid.Column="3"
-                        Grid.Row="1"/>
+                        Grid.Row="1"
+                        Style="{StaticResource RedButton}"/>
                 <!--#region-->
 
                  <!--#region linha 3-->
@@ -52,7 +57,8 @@
                         Grid.Row="2"/>
                 <Button Text="-"
                         Grid.Column="3"
-                        Grid.Row="2"/>
+                        Grid.Row="2"
+                        Style="{StaticResource RedButton}"/>
                 <!--#region-->
 
                   <!--#region linha 4-->
@@ -66,7 +72,8 @@
                         Grid.Row="3"/>
                 <Button Text="+"
                         Grid.Column="3"
-                        Grid.Row="3"/>
+                        Grid.Row="3"
+                        Style="{StaticResource RedButton}"/>
                 <!--#region-->
 
                   <!--#region linha 5-->
@@ -78,7 +85,8 @@
                         Grid.Column="2"/>
                 <Button Text="="
                         Grid.Column="3"
-                        Grid.Row="4"/>
+                        Grid.Row="4"
+                        Style="{StaticResource RedButton}"/>
                 <!--#region-->
 
             </Grid>
