@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Input;
+using Dangl.Calculator;
 using PropertyChanged;
 
 namespace MAUICalculator.MVVM.ViewModels
@@ -27,6 +28,15 @@ namespace MAUICalculator.MVVM.ViewModels
 				{
 					Formula = Formula.Substring(0, Formula.Length - 1);
 				}
+			});
+
+		public ICommand CalculateCommand =>
+			new Command(() =>
+			{
+				if (Formula.Length == 0) return;
+
+				var calculation = Calculator.Calculate(Formula);
+				Result = calculation.Result.ToString();
 			});
 
 
